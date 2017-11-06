@@ -1,0 +1,7 @@
+<%= form_for @post do |f| %>
+
+  <%= f.text_field :title, {id: "title", value: @post.title} %>
+  <%= f.text_field :description, {id: "description",value: @post.description} %>
+  <%= submit_tag "Post", {id: "Submit Post"}%>
+
+<% end %>
